@@ -1,0 +1,48 @@
+.tarot_reading {
+	opacity: 0;
+
+	transition-property: opacity;
+
+	/* override wordpress theme twentytwenty */
+	transition-duration: 3s !important;
+}
+
+.tarot_reading.tarot_reading_shown {
+	opacity: 1;
+}
+.tarot_reading_text {
+	text-align: center;
+}
+.tarot_reading_cards > div {
+	position: absolute;
+	max-width: calc(100vw - 32px);
+	height: auto;
+}
+
+@media screen and (min-width: 684px) {
+	.tarot_reading {
+		width: 652px;
+		height: 910px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tarot_reading_cards svg {
+		width: 652px;
+		height: 910px;
+	}
+}
+@media screen and (max-width: 683px) {
+	.tarot_reading {
+		width: calc(100vw - 48px);
+		height: 139.57vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tarot_reading_cards svg
+	,.tarot_reading_cards img {
+		width: calc(100vw - 48px);
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
